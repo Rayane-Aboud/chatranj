@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Define custom color names that map to CSS variables */
+  --color-board-light: var(--board-light);
+  --color-board-dark: var(--board-dark);
+  --color-ui-bg: var(--ui-bg);
+  --color-ui-text: var(--ui-text);
+}
+
+/* Base Theme (Green/Default) */
+:root {
+  --board-light: #ebecd0;
+  --board-dark: #779556;
+  --ui-bg: #171717;
+  --ui-text: #ffffff;
+}
+
+/* Brown Theme */
+[data-theme="brown"] {
+  --board-light: #f0d9b5;
+  --board-dark: #b58863;
+  --ui-bg: #262421;
+}
+
+/* Ocean Theme */
+[data-theme="ocean"] {
+  --board-light: #dee3e6;
+  --board-dark: #8ca2ad;
+  --ui-bg: #1a2c38;
+}
